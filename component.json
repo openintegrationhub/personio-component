@@ -1,0 +1,151 @@
+{
+  "title": "personio",
+  "description": "personio OIH Connector",
+  "docsUrl": "https://github.com/openintegrationhub/personio",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {
+      "username": {
+        "label": "Your username",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "note": "Use your username registerd in <b>personio</b>",
+        "placeholder": "youremail@mail.com"
+      },
+      "password": {
+        "label": "Your password",
+        "required": true,
+        "viewClass": "PasswordFieldView",
+        "note": "Use your password for <b>personio</b>"
+      },
+      "API_KEY": {
+        "label": "API_KEY",
+        "required": true,
+        "viewClass": "PasswordFieldView",
+        "note": "Your personio API_KEY"
+      },
+      "applicationUid": {
+        "label": "Application uid",
+        "required": false,
+        "viewClass": "TextFieldView",
+        "note": "Application uid",
+        "placeholder": "application123456"
+      },
+      "schema": {
+        "label": "Schema",
+        "required": false,
+        "viewClass": "TextFieldView",
+        "note": "Schema from Meta Data Repository",
+        "placeholder": "address"
+      },
+      "domainId": {
+        "label": "Domain Id",
+        "required": false,
+        "viewClass": "TextFieldView",
+        "note": "Domain Id from Meta Data Repository",
+        "placeholder": "5d3031a20cbe7c00115c7d8f"
+      }
+    }
+  },
+  "triggers": {
+    "getEmployeesPolling": {
+      "title": "Fetch new and updated persons(getPersons - Polling)",
+      "description": "Get Personio persons which have recently been modified or created",
+      "type": "polling",
+      "main": "./lib/triggers/getEmployeesPolling.js",
+      "metadata": {
+        "out": "./lib/schemas/getEmployees.out.json"
+      }
+    },
+    "getTimeoffsPolling": {
+      "title": "Fetch new and updated persons(getPersons - Polling)",
+      "description": "Get Personio persons which have recently been modified or created",
+      "type": "polling",
+      "main": "./lib/triggers/getTimeoffsPolling.js",
+      "metadata": {
+        "out": "./lib/schemas/getTimeoffs.out.json"
+      }
+    },
+    "getAttendancesPolling": {
+      "title": "Fetch new and updated organizations(getOrganizations- Polling)",
+      "description": "Get Personio organizations which have recently been modified or created",
+      "type": "polling",
+      "main": "./lib/triggers/getAttendancesPolling.js",
+      "metadata": {
+        "out": "./lib/schemas/getAttendances.out.json"
+      }
+    }
+  },
+  "actions": {
+    "upsertEmployee": {
+      "title": "Upsert a person in Personio",
+      "main": "./lib/actions/upsertEmployee.js",
+      "metadata": {
+        "in": "./lib/schemas/upsertEmployee.in.json",
+        "out": "./lib/schemas/upsertEmployee.out.json"
+      }
+    },
+
+    "upsertTimeoff": {
+      "title": "Upsert a person in Personio",
+      "main": "./lib/actions/upsertTimeoff.js",
+      "metadata": {
+        "in": "./lib/schemas/upsertTimeoff.in.json",
+        "out": "./lib/schemas/upsertTimeoff.out.json"
+      }
+    },
+    "upsertAttendance": {
+      "main": "./lib/actions/upsertAttendance.js",
+      "title": "Upsert an organization  in Personio",
+      "metadata": {
+        "in": "./lib/schemas/upsertAttendance.in.json",
+        "out": "./lib/schemas/upsertAttendance.out.json"
+      }
+    },
+    "createAttendance": {
+      "title": "Create a new deal in pipedrive",
+      "main": "./lib/actions/createAttendance.js",
+      "metadata": {
+        "in": "./schemas/createAttendance.in.json",
+        "out": "./schemas/common.out.json"
+      },
+      "fields": {
+        "owner_id": {
+          "viewClass": "TextFieldView",
+          "label": "Owner id",
+          "placeholder": "Target pipedrive user id to override the default behaviour."
+        }
+      }
+    },
+    "createEmployee": {
+      "title": "Create a new deal in pipedrive",
+      "main": "./lib/actions/createEmployee.js",
+      "metadata": {
+        "in": "./schemas/createEmployee.in.json",
+        "out": "./schemas/common.out.json"
+      },
+      "fields": {
+        "owner_id": {
+          "viewClass": "TextFieldView",
+          "label": "Owner id",
+          "placeholder": "Target pipedrive user id to override the default behaviour."
+        }
+      }
+    },
+    "createTimeoff": {
+      "title": "Create a new deal in pipedrive",
+      "main": "./lib/actions/createTimeoff.js",
+      "metadata": {
+        "in": "./schemas/createTimeoff.in.json",
+        "out": "./schemas/common.out.json"
+      },
+      "fields": {
+        "owner_id": {
+          "viewClass": "TextFieldView",
+          "label": "Owner id",
+          "placeholder": "Target pipedrive user id to override the default behaviour."
+        }
+      }
+    }
+  }
+}
