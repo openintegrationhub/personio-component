@@ -23,7 +23,7 @@
     "npm": ">=5.4"
   },
   "dependencies": {
-    "@openintegrationhub/ferryman": "^1.0.1",
+    "@openintegrationhub/ferryman": "^1.0.5",
     "axios": "^0.20.0",
     "co": "4.6.0",
     "moment": "^2.29.1",
