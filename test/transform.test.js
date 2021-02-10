@@ -127,10 +127,11 @@ describe('Transformations', () => {
     expect(result).to.not.be.empty;
     expect(result.metadata).to.be.an('object');
     expect(result.data).to.be.an('object');
+    expect(result.data.employee).to.be.an('object');
 
-    expect(result.data.first_name).to.equal('Test');
-    expect(result.data.last_name).to.equal('Person');
+    expect(result.data.employee.first_name).to.equal('Test');
+    expect(result.data.employee.last_name).to.equal('Person');
 
-    expect(result.data.email).to.equal('some@mail.com');
+    expect(result.data.employee.email).to.equal('some@mail.com');
   });
 });
