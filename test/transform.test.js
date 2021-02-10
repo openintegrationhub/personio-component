@@ -123,7 +123,7 @@ describe('Transformations', () => {
 
   it('Should transform OIH person to personio employee format', async () => {
     const result = employeeFromOih(oihPerson);
-
+    console.log(result);
     expect(result).to.not.be.empty;
     expect(result.metadata).to.be.an('object');
     expect(result.data).to.be.an('object');
@@ -133,5 +133,9 @@ describe('Transformations', () => {
     expect(result.data.employee.last_name).to.equal('Person');
 
     expect(result.data.employee.email).to.equal('some@mail.com');
+
+    expect(result.data.employee.position).to.equal('CEO');
+    expect(result.data.employee.gender).to.equal('male');
+    expect(result.data.employee.profile_picture).to.equal('abc.jpg');
   });
 });
