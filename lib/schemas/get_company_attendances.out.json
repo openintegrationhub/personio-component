@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "employee": 325660,
+        "date": "2017-01-18",
+        "start_time": "9:30",
+        "end_time": "18:30",
+        "updated_at": "2017-01-18T16:41:08+01:00",
+        "break": 60,
+        "comment": null,
+        "is_holiday": false,
+        "is_on_time_off": true
+    }
+}

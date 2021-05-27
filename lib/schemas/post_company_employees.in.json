@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "employee_email_": {
+                    "description": "Employee email",
+                    "type": "string"
+                },
+                "employee_first_name_": {
+                    "description": "Employee first name",
+                    "type": "string"
+                },
+                "employee_last_name_": {
+                    "description": "Employee last name",
+                    "type": "string"
+                },
+                "employee_gender_": {
+                    "description": "Employee gender",
+                    "type": "string",
+                    "enum": [
+                        "male",
+                        "female",
+                        "diverse"
+                    ]
+                },
+                "employee_position_": {
+                    "description": "Employee position",
+                    "type": "string"
+                },
+                "employee_department_": {
+                    "description": "Employee department",
+                    "type": "string"
+                },
+                "employee_hire_date_": {
+                    "description": "Employee hire date",
+                    "type": "string",
+                    "format": "date"
+                },
+                "employee_weekly_hours_": {
+                    "description": "Employee weekly working hours",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "employee[email]",
+                "employee[first_name]",
+                "employee[last_name]"
+            ]
+        }
+    }
+}

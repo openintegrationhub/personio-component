@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "start_date": {
+            "required": true,
+            "type": "string",
+            "format": "date"
+        },
+        "end_date": {
+            "required": true,
+            "type": "string",
+            "format": "date"
+        },
+        "updated_from": {
+            "required": false,
+            "type": "string",
+            "format": "datetime"
+        },
+        "updated_to": {
+            "required": false,
+            "type": "string",
+            "format": "datetime"
+        },
+        "employees": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "minimum": 1,
+            "default": 200
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
+        }
+    }
+}

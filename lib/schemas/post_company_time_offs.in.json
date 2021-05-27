@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "title": "Create time-off periods",
+            "type": "object",
+            "properties": {
+                "employee_id": {
+                    "type": "integer",
+                    "description": "Employee identifier"
+                },
+                "time_off_type_id": {
+                    "type": "integer",
+                    "description": "Time-off type identifier"
+                },
+                "start_date": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Absence start date as YYYY-MM-DD"
+                },
+                "end_date": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Absence end date as YYYY-MM-DD"
+                },
+                "half_day_start": {
+                    "type": "boolean",
+                    "description": "Weather the start date is a half-day off"
+                },
+                "half_day_end": {
+                    "type": "boolean",
+                    "description": "Weather the end date is a half-day off"
+                },
+                "comment": {
+                    "type": "string",
+                    "description": "Optional comment"
+                }
+            },
+            "required": [
+                "employee_id",
+                "time_off_type_id",
+                "start_date",
+                "end_date",
+                "half_day_start",
+                "half_day_end"
+            ]
+        }
+    }
+}
