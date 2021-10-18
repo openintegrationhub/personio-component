@@ -238,36 +238,6 @@
                 "out": "./lib/schemas/post_company_attendances.out.json"
             }
         },
-        "delete_company_attendances__id_": {
-            "main": "./lib/actions/delete_company_attendances__id_.js",
-            "title": "This endpoint is responsible for deleting attendance data for the company employees.",
-            "description": "This endpoint is responsible for deleting attendance data for the company employees.",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/delete_company_attendances__id_.in.json",
-                "out": "./lib/schemas/delete_company_attendances__id_.out.json"
-            }
-        },
-        "patch_company_attendances__id_": {
-            "main": "./lib/actions/patch_company_attendances__id_.js",
-            "title": "This endpoint is responsible for updating attendance data for the company employees. Attributes are not required and if not specified, the current value will be used. It is not possible to change the employee id.",
-            "description": "This endpoint is responsible for updating attendance data for the company employees. Attributes are not required and if not specified, the current value will be used. It is not possible to change the employee id.",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/patch_company_attendances__id_.in.json",
-                "out": "./lib/schemas/patch_company_attendances__id_.out.json"
-            }
-        },
         "post_company_time_offs": {
             "main": "./lib/actions/post_company_time_offs.js",
             "title": "This endpoint is responsible for adding absence data for the company employees.",
@@ -281,21 +251,6 @@
             "metadata": {
                 "in": "./lib/schemas/post_company_time_offs.in.json",
                 "out": "./lib/schemas/post_company_time_offs.out.json"
-            }
-        },
-        "delete_company_time_offs__id_": {
-            "main": "./lib/actions/delete_company_time_offs__id_.js",
-            "title": "This endpoint is responsible for deleting absence period data for the company employees.",
-            "description": "This endpoint is responsible for deleting absence period data for the company employees.",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/delete_company_time_offs__id_.in.json",
-                "out": "./lib/schemas/delete_company_time_offs__id_.out.json"
             }
         },
         "get_company_time_offs__id_": {
