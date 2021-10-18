@@ -5,6 +5,15 @@
             "required": true,
             "type": "integer",
             "format": "int32"
+        },
+        "skip_approval": {
+            "required": false,
+            "type": "boolean",
+            "enum": [
+                0,
+                1
+            ],
+            "default": 1
         }
     }
 }

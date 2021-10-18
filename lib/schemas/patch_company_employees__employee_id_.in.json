@@ -1,17 +1,17 @@
 {
     "type": "object",
     "properties": {
+        "employee_id": {
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+        },
         "requestBody": {
             "type": "object",
             "properties": {
                 "employee": {
                     "type": "object",
                     "properties": {
-                        "email": {
-                            "type": "string",
-                            "example": "john.dou@demo.com",
-                            "description": "The email field is required for the employee creation. Updating of this field is not currently supported."
-                        },
                         "first_name": {
                             "type": "string",
                             "example": "John"

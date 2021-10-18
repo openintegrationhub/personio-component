@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "example": 1234
+        },
+        "name": {
+            "type": "string",
+            "example": "Paid Vacation"
+        },
+        "category": {
+            "type": "string",
+            "example": "custom_absence"
+        },
+        "balance": {
+            "type": "number",
+            "example": 10.5
+        }
+    }
+}

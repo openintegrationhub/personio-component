@@ -7,40 +7,36 @@
             "format": "int32"
         },
         "requestBody": {
-            "title": "Update an existing attendance period",
             "type": "object",
             "properties": {
                 "date": {
                     "type": "string",
-                    "format": "date",
-                    "description": "Attendance date as YYYY-MM-DD"
+                    "format": "date"
                 },
                 "start_time": {
                     "type": "string",
                     "pattern": "^\\d\\d:\\d\\d$",
-                    "description": "Start time as HH:MM"
+                    "example": "08:00",
+                    "description": "Format: hh:mm"
                 },
                 "end_time": {
                     "type": "string",
                     "pattern": "^\\d\\d:\\d\\d$",
-                    "description": "End time as HH:MM"
+                    "example": "17:00",
+                    "description": "Format: hh:mm"
                 },
                 "break": {
                     "type": "integer",
-                    "format": "int32",
-                    "description": "Break in minutes"
+                    "example": 60
                 },
                 "comment": {
                     "type": "string",
-                    "description": "Optional comment"
+                    "example": "I was productive as hell"
+                },
+                "skip_approval": {
+                    "type": "boolean",
+                    "description": "Optional, default value is true. If set to false, the approval status of the attendance period will be \"pending\" if an approval rule is set for the attendances type. The respective approval flow will be triggered."
                 }
-            },
-            "example": {
-                "date": "2019-03-17",
-                "start_time": "9:00",
-                "end_time": "12:00",
-                "break": 35,
-                "comment": null
             }
         }
     }

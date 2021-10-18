@@ -14,19 +14,12 @@
         "updated_from": {
             "required": false,
             "type": "string",
-            "format": "datetime"
+            "format": "date"
         },
         "updated_to": {
             "required": false,
             "type": "string",
-            "format": "datetime"
-        },
-        "employees": {
-            "required": false,
-            "type": "array",
-            "items": {
-                "type": "integer"
-            }
+            "format": "date"
         },
         "limit": {
             "required": false,
@@ -39,6 +32,13 @@
             "type": "integer",
             "minimum": 0,
             "default": 0
+        },
+        "employees__": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
         }
     }
 }

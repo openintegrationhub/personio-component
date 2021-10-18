@@ -1,4 +1,8 @@
 {
     "type": "object",
-    "properties": {}
+    "properties": {
+        "message": {
+            "example": "The absence period was deleted."
+        }
+    }
 }

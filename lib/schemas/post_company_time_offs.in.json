@@ -16,24 +16,34 @@
                 "start_date": {
                     "type": "string",
                     "format": "date",
-                    "description": "Absence start date as YYYY-MM-DD"
+                    "description": "Absence start date. Format: yyyy-mm-dd",
+                    "example": "2020-01-31"
                 },
                 "end_date": {
                     "type": "string",
                     "format": "date",
-                    "description": "Absence end date as YYYY-MM-DD"
+                    "description": "Absence end date. Format: yyyy-mm-dd",
+                    "example": "2020-01-31"
                 },
                 "half_day_start": {
                     "type": "boolean",
+                    "example": 0,
                     "description": "Weather the start date is a half-day off"
                 },
                 "half_day_end": {
                     "type": "boolean",
+                    "example": 0,
                     "description": "Weather the end date is a half-day off"
                 },
                 "comment": {
                     "type": "string",
+                    "example": "Some Comment",
                     "description": "Optional comment"
+                },
+                "skip_approval": {
+                    "type": "boolean",
+                    "example": 0,
+                    "description": "Optional, default value is true. If set to false, the approval status of the absence request will be \"pending\" if an approval rule is set for the absence type in Personio. The respective approval flow will be triggered."
                 }
             },
             "required": [

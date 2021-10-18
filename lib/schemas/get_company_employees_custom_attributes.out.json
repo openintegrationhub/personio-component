@@ -1,0 +1,640 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "example": "Employee"
+        },
+        "attributes": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "ID"
+                        },
+                        "value": {
+                            "example": 1
+                        }
+                    }
+                },
+                "first_name": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "First name"
+                        },
+                        "value": {
+                            "example": "Michael"
+                        }
+                    }
+                },
+                "last_name": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Last name"
+                        },
+                        "value": {
+                            "example": "Dou"
+                        }
+                    }
+                },
+                "email": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Email"
+                        },
+                        "value": {
+                            "example": "michael.dou@personio.de"
+                        }
+                    }
+                },
+                "gender": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Gender"
+                        },
+                        "value": {
+                            "example": "male"
+                        }
+                    }
+                },
+                "status": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Status"
+                        },
+                        "value": {
+                            "example": "active"
+                        }
+                    }
+                },
+                "position": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Position"
+                        },
+                        "value": {
+                            "example": "Online Marketing Specialist"
+                        }
+                    }
+                },
+                "supervisor": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "example": "Supervisor"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "example": "Employee"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "object",
+                                            "properties": {
+                                                "label": {
+                                                    "example": 1
+                                                },
+                                                "value": {
+                                                    "example": "id"
+                                                }
+                                            }
+                                        },
+                                        "first_name": {
+                                            "type": "object",
+                                            "properties": {
+                                                "label": {
+                                                    "example": "First Name"
+                                                },
+                                                "value": {
+                                                    "example": "Michael"
+                                                }
+                                            }
+                                        },
+                                        "last_name": {
+                                            "type": "object",
+                                            "properties": {
+                                                "label": {
+                                                    "example": "Last Name"
+                                                },
+                                                "value": {
+                                                    "example": "Dou"
+                                                }
+                                            }
+                                        },
+                                        "email": {
+                                            "type": "object",
+                                            "properties": {
+                                                "label": {
+                                                    "example": "Email"
+                                                },
+                                                "value": {
+                                                    "example": "michael.dou@personio.de"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "employment_type": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Employment type"
+                        },
+                        "value": {
+                            "example": "internal"
+                        }
+                    }
+                },
+                "weekly_working_hours": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Weekly hours"
+                        },
+                        "value": {
+                            "example": 40
+                        }
+                    }
+                },
+                "hire_date": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Hire date"
+                        },
+                        "value": {
+                            "example": "2012-02-01T00:00:00+0100"
+                        }
+                    }
+                },
+                "contract_end_date": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Contact end date"
+                        },
+                        "value": {
+                            "example": "2020-02-01T00:00:00+0100"
+                        }
+                    }
+                },
+                "termination_date": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Termonation date"
+                        },
+                        "value": {
+                            "example": "2020-02-01T00:00:00+0100"
+                        }
+                    }
+                },
+                "termination_type": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Termonation type"
+                        },
+                        "value": {
+                            "example": null
+                        }
+                    }
+                },
+                "termination_reason": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Termonation reason"
+                        },
+                        "value": {
+                            "example": null
+                        }
+                    }
+                },
+                "probation_period_end": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Probation period end"
+                        },
+                        "value": {
+                            "example": "2020-02-01T00:00:00+0100"
+                        }
+                    }
+                },
+                "created_at": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Created at"
+                        },
+                        "value": {
+                            "example": "2018-02-01T00:00:00+0100"
+                        }
+                    }
+                },
+                "last_modified_at": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Last modified"
+                        },
+                        "value": {
+                            "example": "2020-11-18T17:33:55+01:00"
+                        }
+                    }
+                },
+                "subcompany": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Office"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "example": "Office"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "example": "Munich"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "office": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Office"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "example": "Office"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "example": "Munich"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "department": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Department"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "example": "Department"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "example": "Marketing"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "cost_centers": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Cost center"
+                        },
+                        "value": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "example": "CostCenter"
+                                    },
+                                    "attributes": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "example": "Cost Center One"
+                                            },
+                                            "id": {
+                                                "type": "number",
+                                                "example": 1
+                                            },
+                                            "percentage": {
+                                                "type": "number",
+                                                "example": 50
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "holiday_calendar": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Holiday Calendar"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "example": "HolidayCalendar"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "name": {
+                                            "example": "DE (Hamburg) Feiertage"
+                                        },
+                                        "country": {
+                                            "example": "DE"
+                                        },
+                                        "state": {
+                                            "example": "Hamburg"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "work_schedule": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "WorkSchedule"
+                        },
+                        "value": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "example": "WorkSchedule"
+                                },
+                                "attributes": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "name": {
+                                            "example": "Standard Hours"
+                                        },
+                                        "monday": {
+                                            "example": "08:30",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "tuesday": {
+                                            "example": "08:30",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "wednesday": {
+                                            "example": "08:30",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "thursday": {
+                                            "example": "08:30",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "friday": {
+                                            "example": "08:30",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "saturday": {
+                                            "example": "00:00",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        },
+                                        "sunday": {
+                                            "example": "00:00",
+                                            "pattern": "^\\d\\d:\\d\\d$"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "absence_entitlement": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Absence entitlement"
+                        },
+                        "value": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "TimeOffType"
+                                        ]
+                                    },
+                                    "attributes": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer",
+                                                "example": 1
+                                            },
+                                            "name": {
+                                                "example": "Paid Vacation"
+                                            },
+                                            "entitlement": {
+                                                "example": 30
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "value"
+                    ]
+                },
+                "team": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Absence entitlement"
+                        },
+                        "value": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "TimeOffType"
+                                        ]
+                                    },
+                                    "attributes": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer",
+                                                "example": 1
+                                            },
+                                            "name": {
+                                                "example": "Paid Vacation"
+                                            },
+                                            "entitlement": {
+                                                "example": 30
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "value"
+                    ]
+                },
+                "fix_salary": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Fix salary"
+                        },
+                        "value": {
+                            "example": 4000
+                        }
+                    }
+                },
+                "fix_salary_interval": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Salary interval"
+                        },
+                        "value": {
+                            "example": "monthly"
+                        }
+                    }
+                },
+                "hourly_salary": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Hourly salary"
+                        },
+                        "value": {
+                            "example": 0
+                        }
+                    }
+                },
+                "vacation_day_balance": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Vacation day balance"
+                        },
+                        "value": {
+                            "example": 20.5
+                        }
+                    }
+                },
+                "last_working_day": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Last day of work"
+                        },
+                        "value": {
+                            "example": null
+                        }
+                    }
+                },
+                "profile_picture": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "Profile Picture"
+                        },
+                        "value": {
+                            "example": "http://api.dev.personio.de/v1/company/employees/1/profile-picture"
+                        }
+                    }
+                },
+                "dynamic_21827": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "example": "IBAN"
+                        },
+                        "value": {
+                            "example": "DE98 8989 9898 0000 8989 00"
+                        },
+                        "type": {
+                            "description": "The type of the field. It's only visible on custom attributes",
+                            "example": "standard",
+                            "enum": [
+                                "standard",
+                                "date",
+                                "integer",
+                                "decimal",
+                                "list",
+                                "link",
+                                "tags",
+                                "multiline"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

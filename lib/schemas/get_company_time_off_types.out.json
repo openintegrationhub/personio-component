@@ -1,6 +1,14 @@
 {
     "type": "object",
     "properties": {
-        "name": "Home office"
+        "id": 1235,
+        "name": "Home office",
+        "category": "offsite_work",
+        "unit": "hour",
+        "half_day_requests_enabled": true,
+        "certification_required": true,
+        "certification_submission_timeframe": 2,
+        "substitute_option": "optional",
+        "approval_required": true
     }
 }

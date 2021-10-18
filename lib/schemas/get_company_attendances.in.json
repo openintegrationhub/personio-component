@@ -21,12 +21,9 @@
             "type": "string",
             "format": "datetime"
         },
-        "employees": {
+        "includePending": {
             "required": false,
-            "type": "array",
-            "items": {
-                "type": "integer"
-            }
+            "type": "boolean"
         },
         "limit": {
             "required": false,
@@ -39,6 +36,13 @@
             "type": "integer",
             "minimum": 0,
             "default": 0
+        },
+        "employees__": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
         }
     }
 }

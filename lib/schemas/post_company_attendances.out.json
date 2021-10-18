@@ -4,11 +4,12 @@
         "id": {
             "type": "array",
             "items": {
-                "type": "integer"
+                "type": "integer",
+                "example": 1
             }
         },
         "message": {
-            "type": "string"
+            "example": "Success"
         }
     }
 }
